@@ -21,7 +21,20 @@
 		EB7DDAFD29FEC760007A8025 /* PokemonModelGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7DDAFC29FEC760007A8025 /* PokemonModelGeneral.swift */; };
 		EB7DDB042A0200B0007A8025 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EB7DDB032A0200B0007A8025 /* SDWebImageSwiftUI */; };
 		EBB006DA2A02ED1C002E16A9 /* PokemonVMCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB006D92A02ED1C002E16A9 /* PokemonVMCell.swift */; };
+		EBB006E22A02FB81002E16A9 /* PokeFlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB006E12A02FB81002E16A9 /* PokeFlyTests.swift */; };
+		EBB006EA2A02FDBC002E16A9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EBB006E92A02FDBC002E16A9 /* Alamofire */; };
+		EBB006EC2A02FDBC002E16A9 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EBB006EB2A02FDBC002E16A9 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBB006E32A02FB81002E16A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB7DDABC29FC90D7007A8025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB7DDAC329FC90D7007A8025;
+			remoteInfo = PokeFly;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EB7DDAC429FC90D7007A8025 /* PokeFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +50,8 @@
 		EB7DDAFA29FEC207007A8025 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		EB7DDAFC29FEC760007A8025 /* PokemonModelGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModelGeneral.swift; sourceTree = "<group>"; };
 		EBB006D92A02ED1C002E16A9 /* PokemonVMCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVMCell.swift; sourceTree = "<group>"; };
+		EBB006DF2A02FB81002E16A9 /* PokeFlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeFlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB006E12A02FB81002E16A9 /* PokeFlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeFlyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +64,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBB006DC2A02FB81002E16A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB006EC2A02FDBC002E16A9 /* SDWebImageSwiftUI in Frameworks */,
+				EBB006EA2A02FDBC002E16A9 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				EB7DDAC629FC90D7007A8025 /* PokeFly */,
+				EBB006E02A02FB81002E16A9 /* PokeFlyTests */,
 				EB7DDAC529FC90D7007A8025 /* Products */,
+				EBB006E82A02FDBC002E16A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				EB7DDAC429FC90D7007A8025 /* PokeFly.app */,
+				EBB006DF2A02FB81002E16A9 /* PokeFlyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,9 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				EB7DDAD929FC9144007A8025 /* Core */,
-				EB7DDAD829FC9137007A8025 /* Services */,
 				EB7DDAD729FC912E007A8025 /* Models */,
-				EB7DDAD629FC9123007A8025 /* Extensions */,
 				EB7DDAD529FC9115007A8025 /* Utilities */,
 				EB7DDAC729FC90D7007A8025 /* PokeFlyApp.swift */,
 				EB7DDACB29FC90DD007A8025 /* Assets.xcassets */,
@@ -100,13 +125,6 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		EB7DDAD629FC9123007A8025 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		EB7DDAD729FC912E007A8025 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,13 +132,6 @@
 				EB7DDAFC29FEC760007A8025 /* PokemonModelGeneral.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		EB7DDAD829FC9137007A8025 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		EB7DDAD929FC9144007A8025 /* Core */ = {
@@ -167,6 +178,21 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		EBB006E02A02FB81002E16A9 /* PokeFlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBB006E12A02FB81002E16A9 /* PokeFlyTests.swift */,
+			);
+			path = PokeFlyTests;
+			sourceTree = "<group>";
+		};
+		EBB006E82A02FDBC002E16A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,6 +217,28 @@
 			productReference = EB7DDAC429FC90D7007A8025 /* PokeFly.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EBB006DE2A02FB81002E16A9 /* PokeFlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB006E52A02FB81002E16A9 /* Build configuration list for PBXNativeTarget "PokeFlyTests" */;
+			buildPhases = (
+				EBB006DB2A02FB81002E16A9 /* Sources */,
+				EBB006DC2A02FB81002E16A9 /* Frameworks */,
+				EBB006DD2A02FB81002E16A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBB006E42A02FB81002E16A9 /* PBXTargetDependency */,
+			);
+			name = PokeFlyTests;
+			packageProductDependencies = (
+				EBB006E92A02FDBC002E16A9 /* Alamofire */,
+				EBB006EB2A02FDBC002E16A9 /* SDWebImageSwiftUI */,
+			);
+			productName = PokeFlyTests;
+			productReference = EBB006DF2A02FB81002E16A9 /* PokeFlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +251,10 @@
 				TargetAttributes = {
 					EB7DDAC329FC90D7007A8025 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					EBB006DE2A02FB81002E16A9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EB7DDAC329FC90D7007A8025;
 					};
 				};
 			};
@@ -224,6 +276,7 @@
 			projectRoot = "";
 			targets = (
 				EB7DDAC329FC90D7007A8025 /* PokeFly */,
+				EBB006DE2A02FB81002E16A9 /* PokeFlyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +288,13 @@
 			files = (
 				EB7DDACF29FC90DE007A8025 /* Preview Assets.xcassets in Resources */,
 				EB7DDACC29FC90DE007A8025 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB006DD2A02FB81002E16A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +318,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBB006DB2A02FB81002E16A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB006E22A02FB81002E16A9 /* PokeFlyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBB006E42A02FB81002E16A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB7DDAC329FC90D7007A8025 /* PokeFly */;
+			targetProxy = EBB006E32A02FB81002E16A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EB7DDAD029FC90DE007A8025 /* Debug */ = {
@@ -431,6 +507,42 @@
 			};
 			name = Release;
 		};
+		EBB006E62A02FB81002E16A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8U236ZJ992;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PokeFlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeFly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeFly";
+			};
+			name = Debug;
+		};
+		EBB006E72A02FB81002E16A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8U236ZJ992;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PokeFlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeFly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeFly";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -448,6 +560,15 @@
 			buildConfigurations = (
 				EB7DDAD329FC90DE007A8025 /* Debug */,
 				EB7DDAD429FC90DE007A8025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB006E52A02FB81002E16A9 /* Build configuration list for PBXNativeTarget "PokeFlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB006E62A02FB81002E16A9 /* Debug */,
+				EBB006E72A02FB81002E16A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -480,6 +601,16 @@
 			productName = Alamofire;
 		};
 		EB7DDB032A0200B0007A8025 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB7DDB022A0200AF007A8025 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		EBB006E92A02FDBC002E16A9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB7DDADE29FC96F6007A8025 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EBB006EB2A02FDBC002E16A9 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EB7DDB022A0200AF007A8025 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
