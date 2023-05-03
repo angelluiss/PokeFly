@@ -81,38 +81,4 @@ struct PokemonElement: View {
 }
 
 
-//
-//VStack {
-//    
-//    WebImage(url: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(vm.getPokemonDetailIndex(pokemon: pokemon)).png"))
-//               .resizable()
-//               .placeholder(Image(systemName: "photo\(vm.getPokemonDetailIndex(pokemon: pokemon))"))
-//               .indicator(.activity)
-//               .transition(.fade(duration: 0.5))
-//               .scaledToFit()
-//               .frame(width: dimensions, height: dimensions)
-//               .background(.thinMaterial)
-//               .clipShape(Circle())
-//
-//    Text("\(pokemon.name.capitalized)")
-//        .font(.system(size: 24, weight: .regular, design: .monospaced))
-//        .padding(.bottom, 5)
-//
-//    ForEach(pokemon.types) { item in
-//        
-//        Text("\(item.type.name)")
-//        
-//    }
-//
-//}
-
-
-
-//struct HomeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HomeView(pokemon: PokemonGe.samplePokemon, pokemonDetail: <#PokemonDatos#>)
-//            .environmentObject(PokemonVM())
-//    }
-//}
-
 
