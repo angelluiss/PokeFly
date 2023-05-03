@@ -24,6 +24,7 @@
 		EBB006E22A02FB81002E16A9 /* PokeFlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB006E12A02FB81002E16A9 /* PokeFlyTests.swift */; };
 		EBB006EA2A02FDBC002E16A9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EBB006E92A02FDBC002E16A9 /* Alamofire */; };
 		EBB006EC2A02FDBC002E16A9 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EBB006EB2A02FDBC002E16A9 /* SDWebImageSwiftUI */; };
+		EBB006EE2A0301BC002E16A9 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB006ED2A0301BC002E16A9 /* FloatingActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EBB006D92A02ED1C002E16A9 /* PokemonVMCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVMCell.swift; sourceTree = "<group>"; };
 		EBB006DF2A02FB81002E16A9 /* PokeFlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeFlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB006E12A02FB81002E16A9 /* PokeFlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeFlyTests.swift; sourceTree = "<group>"; };
+		EBB006ED2A0301BC002E16A9 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				EB7DDAF429FCA402007A8025 /* PokemonElement.swift */,
+				EBB006ED2A0301BC002E16A9 /* FloatingActionButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				EB7DDAF329FCA073007A8025 /* HomeVM.swift in Sources */,
 				EB7DDAFD29FEC760007A8025 /* PokemonModelGeneral.swift in Sources */,
 				EB7DDAC829FC90D7007A8025 /* PokeFlyApp.swift in Sources */,
+				EBB006EE2A0301BC002E16A9 /* FloatingActionButton.swift in Sources */,
 				EB7DDAF929FCBBFB007A8025 /* PokemonDatos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokeFly/Preview Content\"";
@@ -484,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokeFly/Preview Content\"";
