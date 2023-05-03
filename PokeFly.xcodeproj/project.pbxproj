@@ -19,8 +19,8 @@
 		EB7DDAF929FCBBFB007A8025 /* PokemonDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7DDAF829FCBBFB007A8025 /* PokemonDatos.swift */; };
 		EB7DDAFB29FEC207007A8025 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7DDAFA29FEC207007A8025 /* Helpers.swift */; };
 		EB7DDAFD29FEC760007A8025 /* PokemonModelGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7DDAFC29FEC760007A8025 /* PokemonModelGeneral.swift */; };
-		EB7DDB012A01FB71007A8025 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7DDB002A01FB71007A8025 /* Enums.swift */; };
 		EB7DDB042A0200B0007A8025 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EB7DDB032A0200B0007A8025 /* SDWebImageSwiftUI */; };
+		EBB006DA2A02ED1C002E16A9 /* PokemonVMCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB006D92A02ED1C002E16A9 /* PokemonVMCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		EB7DDAF829FCBBFB007A8025 /* PokemonDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDatos.swift; sourceTree = "<group>"; };
 		EB7DDAFA29FEC207007A8025 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		EB7DDAFC29FEC760007A8025 /* PokemonModelGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModelGeneral.swift; sourceTree = "<group>"; };
-		EB7DDB002A01FB71007A8025 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		EBB006D92A02ED1C002E16A9 /* PokemonVMCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVMCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,6 @@
 			children = (
 				EB7DDAE329FC9827007A8025 /* NetworkingManager.swift */,
 				EB7DDAFA29FEC207007A8025 /* Helpers.swift */,
-				EB7DDB002A01FB71007A8025 /* Enums.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -163,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				EB7DDAF229FCA073007A8025 /* HomeVM.swift */,
+				EBB006D92A02ED1C002E16A9 /* PokemonVMCell.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -247,9 +247,9 @@
 			files = (
 				EB7DDAF529FCA402007A8025 /* PokemonElement.swift in Sources */,
 				EB7DDAF729FCB85A007A8025 /* PokemonDetailView.swift in Sources */,
-				EB7DDB012A01FB71007A8025 /* Enums.swift in Sources */,
 				EB7DDACA29FC90D7007A8025 /* ContentView.swift in Sources */,
 				EB7DDAFB29FEC207007A8025 /* Helpers.swift in Sources */,
+				EBB006DA2A02ED1C002E16A9 /* PokemonVMCell.swift in Sources */,
 				EB7DDAE429FC9827007A8025 /* NetworkingManager.swift in Sources */,
 				EB7DDAF329FCA073007A8025 /* HomeVM.swift in Sources */,
 				EB7DDAFD29FEC760007A8025 /* PokemonModelGeneral.swift in Sources */,

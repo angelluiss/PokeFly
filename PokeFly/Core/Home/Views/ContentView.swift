@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var vm = PokemonVM()
-    let dimensions: Double = 140
     
     private let adaptiveColumns = [
         GridItem(.flexible(minimum: 60)),
         GridItem(.flexible(minimum: 60))
     ]
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -23,14 +23,10 @@ struct ContentView: View {
     
                         NavigationLink(destination: PokemonDetailView(pokemon: pokemon)
                         ) {
-                            PokemonElement(pokemon: pokemon)
+                            PokemonElement(pokemon: pokemon, dimensions: 60)
                             
                         }
-                        .onAppear {
-                            if pokemon == vm.pokemonDetailsMultiples.last {
-                                print("Ultimo")
-                            }
-                        }
+                    
                     }
                 }
                 
